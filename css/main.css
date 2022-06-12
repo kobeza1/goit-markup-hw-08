@@ -26,7 +26,7 @@
 
 .socials, .socials__link, .close-btn, .modal-form__policy, .modal-form__custom-checkbox, .header__container,
 .navigation,
-.navigation__list, .hcontacts, .hcontacts__link, .advantages__wrapper, .what-we-do__text, .team, .clients, .clients__link, .footer__btn, .portfolio-nav, .projects__overlay {
+.navigation__list, .hcontacts, .hcontacts__link, .what-we-do__text, .team, .clients, .clients__link, .footer__btn, .portfolio-nav, .projects__overlay {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -99,12 +99,28 @@ address {
 }
 
 .container {
-  width: 1200px;
-  /* outline: 1px solid red; */
-  margin-left: auto;
-  margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 738px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .btn {
@@ -536,24 +552,14 @@ address {
 }
 
 /* ----- OUR ADVANTAGES ----- */
-.advantages {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.advantages__item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.advantages__title {
-  margin-bottom: 10px;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--primary-font-color);
+@media screen and (min-width: 768px) {
+  .advantages {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-preferred-size: calc((100% - 30) / 2);
+        flex-basis: calc((100% - 30) / 2);
+  }
 }
 
 .advantages__text {
@@ -562,12 +568,6 @@ address {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--description-font-color);
-}
-
-.advantages__wrapper {
-  margin-bottom: 30px;
-  height: 120px;
-  background-color: var(--background-color-additional);
 }
 
 /* ----- WHAT WE DO ----- */
