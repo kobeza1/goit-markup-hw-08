@@ -22,9 +22,11 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  min-height: 581px;
-  min-width: 528px;
-  padding: 40px;
+  width: 100%;
+
+  // min-height: 581px;
+  // min-width: 528px;
+  // padding: 40px;
   text-align: center;
 
   background-color: var(--background-color-primary);

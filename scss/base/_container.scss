@@ -6,11 +6,11 @@
   margin-right: auto;
 
   @include mq(mobile) {
-    width: 450px;
+    width: 480px;
   }
 
   @include mq(tablet) {
-    width: 738px;
+    width: 768px;
   }
 
   @include mq(desktop) {

@@ -19,15 +19,20 @@
 }
 
 .hero__title {
+  @include font(26px, 900, 1.62, 0.06em);
+  color: var(--secondary-font-color);
+
+  max-width: 360px;
   margin-bottom: 30px;
-  max-width: 696px;
   margin-left: auto;
   margin-right: auto;
-  @include font(44px, 900, 1.36, 0.06em);
-
   text-align: center;
   text-transform: uppercase;
-  color: var(--secondary-font-color);
+
+  @include mq(desktop) {
+    @include font(44px, 900, 1.36, 0.06em);
+    max-width: 696px;
+  }
 }
 
 .hero__btn {

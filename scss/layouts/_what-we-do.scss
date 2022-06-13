@@ -2,6 +2,10 @@
 
 .section--nopadding {
   padding-top: 0;
+
+  @include mq(not-desktop) {
+    display: none;
+  }
 }
 
 .what-we-do {
