@@ -25,44 +25,74 @@
     <!--HEADER-->
     <header class="header">
       <div class="container header__container">
-        <a class="logo header__logo" href="./index.html" lang="en"
-          >Web<span class="logo__black">Studio</span></a
-        >
         <nav class="navigation">
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a
-                class="navigation__link navigation__link--current"
-                href="./index.html"
-                >Студия</a
-              >
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="./portfolio.html">Портфолио</a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="">Контакты</a>
-            </li>
-          </ul>
+          <a class="logo header__logo" href="./index.html" lang="en"
+            >Web<span class="logo__black">Studio</span></a
+          >
+          <button
+            type="button"
+            class="navigation__button"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-button
+          >
+            <svg
+              width="40"
+              height="40"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use
+                class="navigation__icon--cross"
+                href="./images/icons/sprite.svg#close"
+              ></use>
+              <use
+                class="navigation__icon--menu"
+                href="./images/icons/sprite.svg#menu"
+              ></use>
+            </svg>
+          </button>
+          <div class="navigation__menu">
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a
+                  class="navigation__link navigation__link--current"
+                  href="./index.html"
+                  >Студия</a
+                >
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="./portfolio.html"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="">Контакты</a>
+              </li>
+            </ul>
+
+            <ul class="header-contacts">
+              <li class="header-contacts__item">
+                <a
+                  class="header-contacts__link"
+                  href="mailto:info@devstudio.com"
+                >
+                  <svg class="header-contacts__icon" width="16" height="12">
+                    <use href="./images/icons/sprite.svg#envelope"></use>
+                  </svg>
+                  info@devstudio.com</a
+                >
+              </li>
+              <li class="header-contacts__item">
+                <a class="header-contacts__link" href="tel:+380961111111">
+                  <svg class="header-contacts__icon" width="10" height="16">
+                    <use href="./images/icons/sprite.svg#smartphone"></use>
+                  </svg>
+                  +380961111111</a
+                >
+              </li>
+            </ul>
+          </div>
         </nav>
-        <ul class="hcontacts">
-          <li class="hcontacts__item">
-            <a class="hcontacts__link" href="mailto:info@devstudio.com">
-              <svg class="hcontacts__icon" width="16" height="12">
-                <use href="./images/icons/sprite.svg#envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="hcontacts__item">
-            <a class="hcontacts__link" href="tel:+380961111111">
-              <svg class="hcontacts__icon" width="10" height="16">
-                <use href="./images/icons/sprite.svg#smartphone"></use>
-              </svg>
-              +380961111111</a
-            >
-          </li>
-        </ul>
       </div>
     </header>
     <!-- <main> -->
@@ -717,6 +747,7 @@
         </form>
       </div>
     </div>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
