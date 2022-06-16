@@ -18,15 +18,13 @@
 
   @include mq(tablet-only) {
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
   }
 }
 
 .footer__contacts-container {
-  margin-bottom: 60px;
-
-  @include mq(tablet-only) {
-    margin-right: 165px;
+  @include mq(not-desktop) {
+    margin-bottom: 60px;
   }
 
   @include mq(desktop) {
@@ -41,9 +39,9 @@
 
 .footer__socials-container {
   margin-bottom: 60px;
-  flex-grow: 1;
 
   @include mq(desktop) {
+    flex-grow: 1;
     margin-right: 93px;
   }
 }
