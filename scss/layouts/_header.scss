@@ -259,6 +259,7 @@
 
 .header-socials {
   display: flex;
+  flex-wrap: wrap;
 
   @include mq(tablet) {
     display: none;
