@@ -5,8 +5,10 @@
 }
 
 .footer-form__input {
+  height: 50px;
   padding: 16px 15px;
   width: 100%;
+  @include font(16px, 400, 1.25, 0.03em);
 
   @include mq(desktop) {
     min-width: 358px;

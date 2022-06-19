@@ -441,8 +441,13 @@ address {
 }
 
 .footer-form__input {
+  height: 50px;
   padding: 16px 15px;
   width: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -1313,6 +1318,8 @@ address {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  padding: 13px 28px;
+  height: 50px;
 }
 
 .footer__btn-icon {
