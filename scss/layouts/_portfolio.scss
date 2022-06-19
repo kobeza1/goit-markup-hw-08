@@ -34,6 +34,14 @@
   }
 }
 
+.projects__link {
+  @include mq(tablet-only) {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+}
+
 .projects__item {
   background: var(--background-color-primary);
 
@@ -119,6 +127,10 @@
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: 0;
+
+  @include mq(tablet-only) {
+    flex-grow: 1;
+  }
 }
 
 .projects__name {

@@ -23,7 +23,7 @@
 }
 
 .footer__contacts-container {
-  @include mq(not-desktop) {
+  @include mq(mobile-only) {
     margin-bottom: 60px;
   }
 
@@ -38,8 +38,6 @@
 }
 
 .footer__socials-container {
-  margin-bottom: 60px;
-
   @include mq(desktop) {
     flex-grow: 1;
     margin-right: 93px;
@@ -76,6 +74,12 @@
   &:hover,
   &:focus {
     background-color: var(--accent-color);
+  }
+}
+
+.footer__form-container {
+  @include mq(not-desktop) {
+    margin-top: 60px;
   }
 }
 

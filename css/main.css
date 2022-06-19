@@ -63,13 +63,20 @@ body {
 }
 
 .section__title {
-  margin-bottom: 50px;
-  font-size: 36px;
+  margin-bottom: 30px;
+  font-size: 28px;
   font-weight: 700;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--primary-font-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .section__title {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
 }
 
 h1,
@@ -971,6 +978,12 @@ address {
   color: var(--primary-font-color);
 }
 
+@media screen and (max-width: 767.98px) {
+  .advantages__title {
+    text-align: center;
+  }
+}
+
 .advantages__text {
   font-size: 14px;
   font-weight: 400;
@@ -1228,7 +1241,7 @@ address {
   }
 }
 
-@media screen and (max-width: 1199.98px) {
+@media screen and (max-width: 767.98px) {
   .footer__contacts-container {
     margin-bottom: 60px;
   }
@@ -1243,10 +1256,6 @@ address {
 .footer__logo {
   display: inline-block;
   margin-bottom: 20px;
-}
-
-.footer__socials-container {
-  margin-bottom: 60px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1292,6 +1301,12 @@ address {
 
 .socials__link--inverse:hover, .socials__link--inverse:focus {
   background-color: var(--accent-color);
+}
+
+@media screen and (max-width: 1199.98px) {
+  .footer__form-container {
+    margin-top: 60px;
+  }
 }
 
 .footer__btn {
@@ -1347,6 +1362,19 @@ address {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .projects__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
   }
 }
 
@@ -1455,6 +1483,14 @@ address {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: 0;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .projects__textgroup {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
 }
 
 .projects__name {

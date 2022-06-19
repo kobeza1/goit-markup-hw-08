@@ -47,6 +47,10 @@
   text-transform: uppercase;
 
   color: var(--primary-font-color);
+
+  @include mq(mobile-only) {
+    text-align: center;
+  }
 }
 
 .advantages__text {
